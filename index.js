@@ -1,6 +1,6 @@
 // Getting input via STDIN
 const readline = require("readline");
-const { countDigits } = require("./session 1")
+const { isOnlyAlpha } = require("./session 1")
 const inp = readline.createInterface({
   input: process.stdin
 });
@@ -16,6 +16,6 @@ inp.on("close", () => {
   //Your code goes here … replace the below line with your code logic 
 
  
- console.log(countDigits(userInput[0]));
+ console.log(isOnlyAlpha(userInput[0]));
   //end-here
 });

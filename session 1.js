@@ -119,4 +119,37 @@ function countDigits(num){
     return count;
 }
 
-module.exports = {positiveOrNegetive,sumOfTwoInteger,sumOfTwoRandomInteger,minAndMax1,minAndMax2,minAndMax,minMidMax,countDigits};
+function countDigit(num) {
+    const floor = val => val - val % 1;
+    let count = 0;
+    while (num > 0) {
+        num = floor(num / 10);
+        count++;
+    }
+    return count;
+}
+
+//6.Check the contain only alphabet?
+function isOnlyAlpha(str){
+    for(const char of str){
+        //if(!((char <= "Z" && char >= "A")||(char <= "z"&& char >= "a")))
+        if((char >= "Z" || char <= "A")&&(char >= "z"|| char <= "a")){
+            return "No" //false;
+        }
+    }
+            return "Yes" //true;   
+    }
+
+
+module.exports = {
+    positiveOrNegetive,
+    sumOfTwoInteger,
+    sumOfTwoRandomInteger,
+    minAndMax1,
+    minAndMax2,
+    minAndMax,
+    minMidMax,
+    countDigits,
+    countDigit,
+    isOnlyAlpha
+};
