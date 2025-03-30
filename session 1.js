@@ -13,5 +13,10 @@ function positiveOrNegetive(num){
     }   
 }
 
+//2.Find the sum of two Integers?
+function sumOfTwoInteger(num1,num2){
+    return num1 + num2;
+}
 
-module.exports = {positiveOrNegetive};
+
+module.exports = {positiveOrNegetive,sumOfTwoInteger};
