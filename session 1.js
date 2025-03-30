@@ -109,4 +109,14 @@ function minMidMax(num1,num2,num3){
     console.log(obj);
 }
 
-module.exports = {positiveOrNegetive,sumOfTwoInteger,sumOfTwoRandomInteger,minAndMax1,minAndMax2,minAndMax,minMidMax};
+//5.Count the number of digits in a number?
+function countDigits(num){
+    let count=0;
+    while(num>0){
+        num=Math.floor(num/10);
+        count++;
+    }
+    return count;
+}
+
+module.exports = {positiveOrNegetive,sumOfTwoInteger,sumOfTwoRandomInteger,minAndMax1,minAndMax2,minAndMax,minMidMax,countDigits};
