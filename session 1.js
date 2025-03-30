@@ -95,4 +95,18 @@ function minAndMax(num1,num2,num3){
     }
 }
 
-module.exports = {positiveOrNegetive,sumOfTwoInteger,sumOfTwoRandomInteger,minAndMax1,minAndMax2,minAndMax};
+
+function minMidMax(num1,num2,num3){
+    const max =(num1,num2)=> num1<=num2 ? num2:num1;
+    const min =(num1,num2)=> num1>=num2 ? num2:num1; 
+   
+    const obj={
+        max: max(num1,max(num2,num3)),
+        min: min(num1,min(num2,num3))
+    }
+    //console.log(obj.max,obj.min); 
+    obj.mid= num1+num2+num3-obj.max-obj.min;
+    console.log(obj);
+}
+
+module.exports = {positiveOrNegetive,sumOfTwoInteger,sumOfTwoRandomInteger,minAndMax1,minAndMax2,minAndMax,minMidMax};
