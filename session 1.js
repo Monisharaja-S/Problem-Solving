@@ -22,5 +22,45 @@ function sumOfTwoInteger(num1,num2){
 function sumOfTwoRandomInteger(num1,num2){
     return num1 + num2+Math.floor(Math.random()*1000)///input.txt(5,10)
 }
-console.log(sumOfTwoRandomInteger(5,10))
-module.exports = {positiveOrNegetive,sumOfTwoInteger,sumOfTwoRandomInteger};
+//console.log(sumOfTwoRandomInteger(5,10))
+
+//4.Find the min and max from given three numbers?
+
+function minAndMax(num1,num2,num3){
+//console.log(num1,num2,num3);
+let max;
+let min;
+if(num1<=num2){
+    if(num2<=num3){
+        max=num3;
+    }
+    else {
+        max=num2;
+    }
+}else { if(num1<=num3)
+        {
+        max=num3;
+    }
+    else {
+        max=num1;}
+    }
+if(num1>=num2){
+    if(num2>=num3){
+        min=num3;
+    }
+    else {
+        min=num2;
+    }
+ } else {if(num1>=num3)
+        {
+        min=num3;
+    }
+    else {
+        min=num1;}
+    
+    }
+   return { min, max };
+//console.log(`max=${max},min=${min}`);
+}
+
+module.exports = {positiveOrNegetive,sumOfTwoInteger,sumOfTwoRandomInteger,minAndMax};
