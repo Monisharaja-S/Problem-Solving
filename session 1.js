@@ -63,7 +63,7 @@ if(num1>=num2){
 //console.log(`max=${max},min=${min}`);
 }
 
-function minAndMax(num1,num2,num3){
+function minAndMax2(num1,num2,num3){
     let min;
     let max;
     if(num1<=num2 && num1<=num3){
@@ -84,4 +84,15 @@ function minAndMax(num1,num2,num3){
 return{max,min}
 }
 
-module.exports = {positiveOrNegetive,sumOfTwoInteger,sumOfTwoRandomInteger,minAndMax1,minAndMax};
+
+function minAndMax(num1,num2,num3){
+    const max =(num1,num2)=> num1<=num2 ? num2:num1;
+    const min =(num1,num2)=> num1>=num2 ? num2:num1; 
+    //console.log(max,min);
+    return{
+        max: max(num1,max(num2,num3)),
+        min: min(num1,min(num2,num3))
+    }
+}
+
+module.exports = {positiveOrNegetive,sumOfTwoInteger,sumOfTwoRandomInteger,minAndMax1,minAndMax2,minAndMax};
