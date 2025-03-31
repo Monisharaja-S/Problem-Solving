@@ -1,6 +1,6 @@
 // Getting input via STDIN
 const readline = require("readline");
-const { differ } = require("./session 1")
+const { evenOrOdd } = require("./session 1")
 const inp = readline.createInterface({
   input: process.stdin
 });
@@ -15,7 +15,7 @@ inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
 
- const [val1,val2]=userInput[0].split(" ").map(Number);
- console.log(differ(val1,val2));
+
+ console.log(evenOrOdd(userInput[0]));
   //end-here
 });

@@ -167,6 +167,14 @@ function differ(num1,num2){
 }
 
 //2.check if a number is even or odd?
+function evenOrOdd(num){
+    if(num%2===0){
+        return "Even";
+    }else{
+        return "Odd";
+    }
+}
+
 //3.Calculate the perimeter of a rectangle?
 //4.Find the largest of four numbers?
 //5.Calculate the average of three numbers?
@@ -188,5 +196,6 @@ module.exports = {
     isOnlyAlpha,
     areaOfCircle,
     isVowels,
-    differ
+    differ,
+    evenOrOdd
 };
