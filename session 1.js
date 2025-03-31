@@ -138,8 +138,16 @@ function isOnlyAlpha(str){
         }
     }
             return "Yes" //true;   
-    }
 
+            return /^[A-Za-z]+$/.test(str)? "YES":"NO"; 
+         }
+
+//7.Calculate the area of a circle with a given radius?
+
+function areaOfCircle(rad){
+   // return Math.PI*rad*rad;
+   return ((22/7)*rad*rad);
+}
 
 module.exports = {
     positiveOrNegetive,
@@ -151,5 +159,6 @@ module.exports = {
     minMidMax,
     countDigits,
     countDigit,
-    isOnlyAlpha
+    isOnlyAlpha,
+    areaOfCircle
 };
