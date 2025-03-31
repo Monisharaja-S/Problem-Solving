@@ -156,6 +156,25 @@ function isVowels(char){
     return 'aeiouAEIOU'.indexOf(char) == -1 ? "NO":"YES";
 }
 
+//practice question
+//1.Calculate the difference between two integers?
+function differ(num1,num2){
+    if(num1<num2){
+        return num2-num1;
+    }else{
+        return num1-num2;
+    }
+}
+
+//2.check if a number is even or odd?
+//3.Calculate the perimeter of a rectangle?
+//4.Find the largest of four numbers?
+//5.Calculate the average of three numbers?
+//6.count the number og vowels in a string?
+//7.Determine if a character is uppercase?
+//8.Print the reverse of a string?
+//9.Find the square of a number?
+
 module.exports = {
     positiveOrNegetive,
     sumOfTwoInteger,
@@ -168,5 +187,6 @@ module.exports = {
     countDigit,
     isOnlyAlpha,
     areaOfCircle,
-    isVowels
+    isVowels,
+    differ
 };
