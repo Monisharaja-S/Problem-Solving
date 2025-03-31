@@ -149,6 +149,13 @@ function areaOfCircle(rad){
    return ((22/7)*rad*rad);
 }
 
+//8.Check if a charactor is a vowels?
+
+function isVowels(char){
+    //return char=='a'||char=='e'||char=='i'||char=='o'||char=='u'||char=='A'||char=='E'||char=='I'||char=='O'||char=='U';
+    return 'aeiouAEIOU'.indexOf(char) == -1 ? "NO":"YES";
+}
+
 module.exports = {
     positiveOrNegetive,
     sumOfTwoInteger,
@@ -160,5 +167,6 @@ module.exports = {
     countDigits,
     countDigit,
     isOnlyAlpha,
-    areaOfCircle
+    areaOfCircle,
+    isVowels
 };
