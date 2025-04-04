@@ -197,6 +197,9 @@ function largest(num1,num2,num3,num4){
 }
 
 //5.Calculate the average of three numbers?
+function average(num1,num2,num3){
+    return (num1+num2+num3)/2;
+}
 //6.count the number og vowels in a string?
 //7.Determine if a character is uppercase?
 //8.Print the reverse of a string?
@@ -218,5 +221,6 @@ module.exports = {
     differ,
     evenOrOdd,
     perimeter,
-    largest
+    largest,
+    average
 };
