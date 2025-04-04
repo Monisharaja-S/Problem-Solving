@@ -1,6 +1,6 @@
 // Getting input via STDIN
 const readline = require("readline");
-const { average } = require("./session 1")
+const { countVowels } = require("./session 1")
 const inp = readline.createInterface({
   input: process.stdin
 });
@@ -14,8 +14,8 @@ inp.on("line", (data) => {
 inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
+//const char=(userInput[0]).split("");
 
-const [val1,val2,val3]=(userInput[0].split(" ").map(Number));
- console.log(average(val1,val2,val3));
+ console.log(countVowels(userInput[0]));
   //end-here
 });

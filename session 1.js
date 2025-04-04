@@ -201,6 +201,16 @@ function average(num1,num2,num3){
     return (num1+num2+num3)/2;
 }
 //6.count the number og vowels in a string?
+function countVowels(str){
+    let count=0;  
+   for(const char of str){
+    if(char=='a'||char=='e'||char=='i'||char=='o'||char=='u'||char=='A'||char=='E'||char=='I'||char=='O'||char=='U'){
+        count++;
+    }
+}
+    return count;
+}
+
 //7.Determine if a character is uppercase?
 //8.Print the reverse of a string?
 //9.Find the square of a number?
@@ -222,5 +232,6 @@ module.exports = {
     evenOrOdd,
     perimeter,
     largest,
-    average
+    average,
+    countVowels
 };
