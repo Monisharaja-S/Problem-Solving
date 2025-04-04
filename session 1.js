@@ -176,7 +176,26 @@ function evenOrOdd(num){
 }
 
 //3.Calculate the perimeter of a rectangle?
+function perimeter(num1,num2){
+    let l;
+    let w;
+    if(num1<num2){
+        l=num2;
+        w=num1;
+    }else{
+        l=num1;
+        w=num2;
+    }
+    return 2*(l+w);
+}
+
 //4.Find the largest of four numbers?
+const lar=(val1,val2)=> val1<val2 ? val2:val1;
+function largest(num1,num2,num3,num4){
+
+
+}
+
 //5.Calculate the average of three numbers?
 //6.count the number og vowels in a string?
 //7.Determine if a character is uppercase?
@@ -197,5 +216,6 @@ module.exports = {
     areaOfCircle,
     isVowels,
     differ,
-    evenOrOdd
+    evenOrOdd,
+    perimeter
 };

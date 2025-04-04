@@ -1,6 +1,6 @@
 // Getting input via STDIN
 const readline = require("readline");
-const { evenOrOdd } = require("./session 1")
+const {  perimeter } = require("./session 1")
 const inp = readline.createInterface({
   input: process.stdin
 });
@@ -15,7 +15,7 @@ inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
 
-
- console.log(evenOrOdd(userInput[0]));
+const [val1,val2]=(userInput[0].split(" ").map(Number));
+ console.log(perimeter(val1,val2));
   //end-here
 });
