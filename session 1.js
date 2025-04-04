@@ -211,9 +211,14 @@ function countVowels(str){
     return count;
 }
 
+
 //7.Determine if a character is uppercase?
 //8.Print the reverse of a string?
 //9.Find the square of a number?
+
+function square(num){
+    return num*num;
+}
 
 module.exports = {
     positiveOrNegetive,
@@ -233,5 +238,6 @@ module.exports = {
     perimeter,
     largest,
     average,
-    countVowels
+    countVowels,
+    square
 };
