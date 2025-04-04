@@ -192,8 +192,8 @@ function perimeter(num1,num2){
 //4.Find the largest of four numbers?
 const lar=(val1,val2)=> val1<val2 ? val2:val1;
 function largest(num1,num2,num3,num4){
-
-
+   return{ lar:(num1,lar(num2,lar(num3,num4)))
+   }
 }
 
 //5.Calculate the average of three numbers?
@@ -217,5 +217,6 @@ module.exports = {
     isVowels,
     differ,
     evenOrOdd,
-    perimeter
+    perimeter,
+    largest
 };
