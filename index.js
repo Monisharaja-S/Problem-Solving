@@ -1,6 +1,6 @@
 // Getting input via STDIN
 const readline = require("readline");
-const { upperCase } = require("./session 1")
+const { reverse } = require("./session 1")
 const inp = readline.createInterface({
   input: process.stdin
 });
@@ -16,6 +16,6 @@ inp.on("close", () => {
   //Your code goes here … replace the below line with your code logic 
 //const char=(userInput[0]).split("");
 
- console.log(upperCase(userInput[0]));
+ console.log(reverse(userInput[0]));
   //end-here
 });

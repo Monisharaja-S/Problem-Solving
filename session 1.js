@@ -223,8 +223,12 @@ function upperCase(str){
 }}
 //8.Print the reverse of a string?
 function reverse(str){
-
-
+      let rev="";
+    //console.log(str);
+for(let ind=str.length-1;ind>=0;ind--){
+    rev=rev+str[ind];
+}
+return rev;
 }
 //9.Find the square of a number?
 
@@ -252,5 +256,6 @@ module.exports = {
     average,
     countVowels,
     upperCase,
+    reverse,
     square
 };
