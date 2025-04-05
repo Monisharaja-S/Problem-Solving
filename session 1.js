@@ -213,7 +213,19 @@ function countVowels(str){
 
 
 //7.Determine if a character is uppercase?
+function upperCase(str){
+    for(const char of str){
+       if(char <="Z" && char>="A"){
+        return "yes";
+       }else if(char <="z"&& char>="a"){
+        return "no";
+       }
+}}
 //8.Print the reverse of a string?
+function reverse(str){
+
+
+}
 //9.Find the square of a number?
 
 function square(num){
@@ -239,5 +251,6 @@ module.exports = {
     largest,
     average,
     countVowels,
+    upperCase,
     square
 };
